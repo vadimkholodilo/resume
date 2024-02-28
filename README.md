@@ -1,16 +1,13 @@
-A single-page, one-column resume for software developers. It uses the base latex templates and fonts to provide ease of use and installation when trying to update the resume. The different sections are clearly documented and custom commands are used to provide consistent formatting. The three main sections in the resume are education, experience, and projects.
+# Resume
 
-### Motivation
+[Download PDF](https://github.com/vadimkholodilo/resume/releases/latest/download/resume.pdf)
 
-I created this template as managing a resume on Google Docs was hard and changing any formatting was too difficult since it had to be applied in multiple places.
+This repository hosts my resume, written in LaTeX.
 
-Most currently available templates either focus on two columns, or are multiple pages long that didn't work well for career fairs or online applications.
+## Contributing
 
-### Quick start
+As this is my personal resume, I'm not accepting contributions. However, feel free to use the LaTeX source code as a reference for your own resume.
 
-Get started quickly using [Overleaf](https://www.overleaf.com/latex/templates/software-engineer-resume/gqxmqsvsbdjf) template.
+## License
 
-
-### License
-
-Format is MIT but all the data is owned by Sourabh Bajaj.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
