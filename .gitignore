@@ -16,3 +16,6 @@ Archieve/
 .*.lb
 # output files
 *.pdf
+
+# Playwright MCP page snapshots
+.playwright-mcp/
