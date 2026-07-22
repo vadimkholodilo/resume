@@ -9,6 +9,8 @@ description: Use when adding a new job/position entry to resume.tex, or editing 
 
 Ask for whatever isn't already given: company, location, title, start/end dates (format `Mon. YYYY -- Mon. YYYY` or `Mon. YYYY -- Present`, matching existing entries like `Nov. 2023 - May. 2024`), and the raw material for bullets (what they did, tools used, measurable impact).
 
+If the user has a careers-page/job-posting URL and wants help remembering what to write, use the **research-job-posting** skill first to draft candidate bullets from the posting — then come back here with the ones the user confirms are true.
+
 ## 2. Write bullets in the house style
 
 Study the existing `\resumeItem` bullets in [resume.tex](../../../resume.tex) before writing new ones. Match:
