@@ -21,3 +21,6 @@ Archieve/
 
 # Playwright MCP page snapshots
 .playwright-mcp/
+
+# Generated ATS analysis reports (regenerate via `make report`)
+*-ats-report.md
