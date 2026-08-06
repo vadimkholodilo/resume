@@ -11,10 +11,12 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-      - name: Build resume
+      - name: Build resumes
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: resume.tex
+          root_file: |
+            resume-en.tex
+            resume-ru.tex
       - name: Create release
         id: create_release
         uses: actions/create-release@v1
@@ -25,13 +27,23 @@ jobs:
           release_name: Release ${{ github.ref }}
           draft: false
           prerelease: false
-      - name: Upload PDF
-        id: upload-pdf
+      - name: Upload English PDF
+        id: upload-pdf-en
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: resume.pdf
-          asset_name: resume.pdf
+          asset_path: resume-en.pdf
+          asset_name: resume-en.pdf
+          asset_content_type: application/pdf
+      - name: Upload Russian PDF
+        id: upload-pdf-ru
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: resume-ru.pdf
+          asset_name: resume-ru.pdf
           asset_content_type: application/pdf

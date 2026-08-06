@@ -1,8 +1,8 @@
 # Resume
 
-[Download PDF](https://github.com/vadimkholodilo/resume/releases/latest/download/resume.pdf)
+[Download PDF (English)](https://github.com/vadimkholodilo/resume/releases/latest/download/resume-en.pdf) | [Download PDF (Russian)](https://github.com/vadimkholodilo/resume/releases/latest/download/resume-ru.pdf)
 
-This repository hosts my resume, written in LaTeX.
+This repository hosts my resume, written in LaTeX, in English ([resume-en.tex](resume-en.tex)) and Russian ([resume-ru.tex](resume-ru.tex)) versions.
 
 ## Contributing
 

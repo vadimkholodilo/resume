@@ -5,7 +5,7 @@ description: Use at the start of adding a new position, when the user gives a co
 
 # Researching a job posting to draft resume bullets
 
-Purpose: memory aid, not fabrication. You will produce *draft, unverified* bullet candidates derived from what a job posting says the role expects. The user must confirm each one is actually true of their own experience before it goes anywhere near [resume.tex](../../../resume.tex). Never present a drafted bullet as a fact about the user's history.
+Purpose: memory aid, not fabrication. You will produce *draft, unverified* bullet candidates derived from what a job posting says the role expects. The user must confirm each one is actually true of their own experience before it goes anywhere near [resume-en.tex](../../../resume-en.tex). Never present a drafted bullet as a fact about the user's history.
 
 ## 1. Get the inputs
 
@@ -37,4 +37,4 @@ Group drafts by posting/company. Flag which specific tools/technologies appear, 
 
 ## 6. Hand off
 
-Present the drafts to the user for review. Once they confirm which are true (and supply any real metrics), use the **new-position** skill to write them into `resume.tex` in house style and to reconcile the Programming Skills list. Do not write directly to `resume.tex` from this skill.
+Present the drafts to the user for review. Once they confirm which are true (and supply any real metrics), use the **new-position** skill to write them into `resume-en.tex` in house style and to reconcile the Programming Skills list. Do not write directly to `resume-en.tex` from this skill.

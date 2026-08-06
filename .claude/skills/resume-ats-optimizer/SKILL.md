@@ -1,6 +1,6 @@
 ---
 name: resume-ats-optimizer
-description: Use when the user wants to score or optimize resume.tex for Applicant Tracking Systems (ATS) — checking ATS compatibility, analyzing keyword match against a job posting, or figuring out why applications aren't getting responses. Source: Paramchoudhary/ResumeSkills (github.com/Paramchoudhary/ResumeSkills), MIT licensed.
+description: Use when the user wants to score or optimize resume-en.tex for Applicant Tracking Systems (ATS) — checking ATS compatibility, analyzing keyword match against a job posting, or figuring out why applications aren't getting responses. Source: Paramchoudhary/ResumeSkills (github.com/Paramchoudhary/ResumeSkills), MIT licensed.
 ---
 
 ## When to Use This Skill
@@ -318,7 +318,7 @@ After optimization, the resume should:
 
 ## Notes for this repo
 
-This project's resume is `resume.tex`, a LaTeX document — not a Word/PDF template. When scoring or optimizing:
-- Read `resume.tex` directly rather than asking for a file upload.
+This project's resume is `resume-en.tex`, a LaTeX document — not a Word/PDF template. When scoring or optimizing:
+- Read `resume-en.tex` directly rather than asking for a file upload.
 - LaTeX output already tends to be single-column, standard-fonted, and text-based (ATS-friendly by construction) — focus the review on keyword match and section-header wording rather than re-litigating file format basics.
 - If suggesting bullet or skills changes, follow this repo's existing macros (`\resumeItem`, etc.) per [CLAUDE.md](../../CLAUDE.md) rather than proposing a new template.
