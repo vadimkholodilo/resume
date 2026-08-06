@@ -53,8 +53,7 @@ This is the part that's easy to get wrong silently: **a skill only belongs in th
 After editing, compile **both** files to confirm they're valid LaTeX (per [CLAUDE.md](../../../CLAUDE.md)):
 
 ```bash
-latexmk -pdf resume-en.tex
-latexmk -pdf resume-ru.tex
+make build
 ```
 
 Check the log (or `grep -i "output written" resume-ru.log`) for the page count â€” Russian text runs longer than English, so a new bullet can silently push `resume-ru.tex` onto a second page even when `resume-en.tex` still fits on one. If it overflows, tighten the Russian wording (shorter phrasing, drop redundant qualifiers) rather than shrinking fonts/margins.
@@ -62,7 +61,7 @@ Check the log (or `grep -i "output written" resume-ru.log`) for the page count â
 Then clean up build artifacts if they're not wanted (they're gitignored, so this is optional):
 
 ```bash
-latexmk -c
+make clean
 ```
 
 Report back which skills (if any) were added to or should be removed from `Programming Skills` in both files, since that's the part most likely to be missed.

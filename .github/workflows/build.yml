@@ -8,15 +8,15 @@ on:
 jobs:
   build_latex:
     runs-on: ubuntu-latest
+    container:
+      image: texlive/texlive:latest
     steps:
+      - name: Install git and make
+        run: apt-get update && apt-get install -y git make
       - name: Checkout code
         uses: actions/checkout@v3
       - name: Build resumes
-        uses: xu-cheng/latex-action@v3
-        with:
-          root_file: |
-            resume-en.tex
-            resume-ru.tex
+        run: make build
       - name: Create release
         id: create_release
         uses: actions/create-release@v1

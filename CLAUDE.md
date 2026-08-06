@@ -8,19 +8,19 @@ A personal resume (Vadim Kholodilo), maintained in **two language versions** tha
 
 ## Commands
 
-Build the PDFs locally (requires a LaTeX distribution with `latexmk`/`pdflatex`, e.g. MacTeX/TeX Live):
+Build both PDFs locally via the [Makefile](Makefile) (requires a LaTeX distribution with `latexmk`, e.g. MacTeX/TeX Live):
 
 ```bash
-latexmk -pdf resume-en.tex
-latexmk -pdf resume-ru.tex
+make build   # or just `make`
 ```
 
-or directly:
+Clean build artifacts:
 
 ```bash
-pdflatex resume-en.tex
-pdflatex resume-ru.tex
+make clean
 ```
+
+Equivalently, per-file: `latexmk -pdf resume-en.tex` / `latexmk -pdf resume-ru.tex`.
 
 Aux/build artifacts (`*.aux`, `*.log`, `*.out`, `*.pdf`, etc.) are gitignored — don't commit them.
 
@@ -34,7 +34,7 @@ Releases are cut by tagging, not by pushing to a branch. `create_release.sh` cre
 ./create_release.sh
 ```
 
-This triggers [.github/workflows/build.yml](.github/workflows/build.yml), which only fires on tags matching that 14-digit timestamp pattern. The workflow compiles both `resume-en.tex` and `resume-ru.tex` with `xu-cheng/latex-action`, creates a GitHub release for the tag, and uploads `resume-en.pdf` and `resume-ru.pdf` as release assets. The README's "Download PDF" links always point at the *latest* release, so any tag push effectively republishes both resumes.
+This triggers [.github/workflows/build.yml](.github/workflows/build.yml), which only fires on tags matching that 14-digit timestamp pattern. The workflow runs in a `texlive/texlive` container, builds both `resume-en.tex` and `resume-ru.tex` via `make build` (the same Makefile used locally), creates a GitHub release for the tag, and uploads `resume-en.pdf` and `resume-ru.pdf` as release assets. The README's "Download PDF" links always point at the *latest* release, so any tag push effectively republishes both resumes.
 
 ## Content structure of resume-en.tex / resume-ru.tex
 
