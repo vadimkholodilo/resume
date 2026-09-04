@@ -26,7 +26,7 @@
 
 %-----------SUMMARY-----------------
 \section{Резюме}
-\small{Backend-разработчик с 5-летним опытом проектирования и масштабирования микросервисов на .NET/C\# в Agile-командах. Работаю с Elasticsearch, AWS, RabbitMQ и CI/CD.}
+\small{Backend-разработчик с 5-летним опытом проектирования и масштабирования микросервисов на .NET/C\# в Agile-командах. Работаю с Elasticsearch, AWS, брокерами сообщений и CI/CD.}
 \vspace{-8pt}
 
 %-----------EDUCATION-----------------
@@ -47,35 +47,38 @@
 {Pyrus}{Москва, Россия}
 {Backend-разработчик}{Июн. 2024 --- Июл. 2026}
 \resumeItemListStart
+\resumeSkills{Навыки}{C\#, .NET, Elasticsearch, MSSQL, PostgreSQL, AWS Lambda, Docker, GitLab, TeamCity}
 \resumeItem{Переработал модуль управления сотрудниками на базе Elasticsearch, обеспечив поддержку более 40 000 записей о сотрудниках}
 \resumeItem{Разрабатывал и оптимизировал serverless-ботов на AWS Lambda для клиентов из США, автоматизируя автозаполнение форм из Excel}
-\resumeItem{Исправил более 1000 багов в backend-системах, заметно повысив стабильность платформы и снизив число инцидентов}
-\resumeItem{Руководил рефакторингом Pyrus Sync, перенеся кодовую базу с .NET Framework 4.8 на .NET 10}
-\resumeItem{Обеспечивал согласованность данных между RU и US кластерами при миграции сущностей, включая историю тарифов, без потери данных при сложных ID-преобразованиях}
-\resumeItem{Выполнял обязанности технической поддержки второй линии для клиентов из США: обрабатывал тикеты и звонки}
+\resumeItem{Исправил 1000+ багов в backend, повысив стабильность платформы и снизив число инцидентов}
+\resumeItem{Руководил рефакторингом Pyrus Sync, перенеся его с .NET Framework 4.8 на .NET 10}
+\resumeItem{Обеспечивал согласованность данных между RU и US кластерами при миграции: устранял нетривиальные баги целостности данных и реализовал логику миграции сущностей, включая историю изменения тарифов, без потери данных при сложных преобразованиях ID}
+\resumeItem{Напрямую поддерживал клиентов из США через тикеты и звонки, решая технические вопросы вне основных задач разработки}
 \resumeItem{Был экспертом команды по Docker, помогая коллегам с контейнеризацией и развёртыванием}
-\resumeItem{Продвигал AI-ассистированную разработку в компании: создавал внутренние инструменты и писал документацию, ускорявшую онбординг}
-\resumeItem{Создавал и дорабатывал GitLab CI/CD пайплайны для автоматизации релизов, сократив время их выполнения на 30\%}
+\resumeItem{Продвигал AI-ассистированную разработку в компании: создавал внутренние инструменты и документацию, ускорявшую онбординг}
+\resumeItem{Создавал и дорабатывал пайплайны в GitLab CI/CD и TeamCity для автоматизации релизов и оптимизации этапов сборки и тестирования, сократив время их выполнения на 30\%}
 \resumeItemListEnd
 
 \resumeSubheading
 {Build Logics}{Ноксвилл, Теннесси}
 {Разработчик ПО}{Нояб. 2023 --- Май 2024}
 \resumeItemListStart
+\resumeSkills{Навыки}{C\#, .NET, ASP.NET Core, Entity Framework, MSSQL, Angular, Stripe, GitHub Actions, Jira}
 \resumeItem{Повысил безопасность и эффективность платежей, интегрировав Stripe в собственную CRM-систему на .NET 6}
-\resumeItem{Обновил фронтенд CRM с Angular 14 до Angular 16 для поддержки пакетов, несовместимых с Angular 14}
+\resumeItem{Обновил фронтенд CRM с Angular 14 до Angular 16 для поддержки пакетов, несовместимых со старой версией}
 \resumeItem{Оптимизировал доставку ПО, настроив CI/CD пайплайны в GitHub Actions, сократив время развёртывания на 50\%}
-\resumeItem{Тесно сотрудничал с QA и закрыл все баги, назначенные в Jira, сократив их количество на 95\% за месяц}
+\resumeItem{Сотрудничал с QA и закрыл 100\% багов в Jira, сократив их число на 95\% за месяц}
 \resumeItemListEnd
 
 \resumeSubheading
 {Alliance Bernstein}{Нашвилл, Теннесси}
 {Разработчик ПО}{Май 2022 --- Авг. 2023}
 \resumeItemListStart
+\resumeSkills{Навыки}{C\#, .NET, MSSQL, RabbitMQ, Azure, Azure DevOps, Python}
 \resumeItem{Реализовал и развернул 3 RESTful-микросервиса для платформы управления заявками по облигациям на основе паттерна CQRS, повысив производительность системы на 25\%}
 \resumeItem{Оптимизировал SQL-запросы в Microsoft SQL Server, увеличив скорость работы микросервиса Orders на 30\%}
-\resumeItem{Оптимизировал процесс доставки ПО, настроив и улучшив CI/CD пайплайны в Azure DevOps для новых и существующих микросервисов, сократив время развёртывания на 50\%}
-\resumeItem{Реализовал событийно-ориентированные фоновые задачи на RabbitMQ, разделив планирование и обработку для повышения масштабируемости и наблюдаемости системы}
+\resumeItem{Оптимизировал доставку ПО, настроив и улучшив CI/CD пайплайны в Azure DevOps для новых и существующих микросервисов, сократив время развёртывания на 50\%}
+\resumeItem{Реализовал событийно-ориентированные фоновые задачи на RabbitMQ, разделив планирование и обработку для повышения масштабируемости и наблюдаемости}
 \resumeItem{Создавал пайплайны обработки данных для внутреннего фреймворка автоматизации тестирования на Python}
 \resumeItemListEnd
 
@@ -124,10 +127,10 @@
 \section{Технические навыки}
 \resumeSubHeadingListStart
 \item{
-            \textbf{Языки программирования}{: C\#, Python, C, SQL, HTML, CSS, Bash, PowerShell}
+            \textbf{Языки программирования}{: C\#, Python}
       }
 \item{
-            \textbf{Технологии}{: Azure DevOps, .NET, REST API, React, Angular, RabbitMQ, Docker, Git, Linux, MSSQL, PostgreSQL, AWS, Azure, Jira, CI/CD, GitHub Actions, Node.js, Elasticsearch, GitLab CI, TeamCity, Entity Framework, CQRS, Stripe}
+            \textbf{Технологии}{: .NET, ASP.NET Core, Entity Framework, Angular, RabbitMQ, MSSQL, PostgreSQL, Elasticsearch, Docker, Linux, AWS, Azure, CI/CD, GitHub Actions, GitLab, TeamCity, Azure DevOps, Jira, Stripe}
       }
 \resumeSubHeadingListEnd
 
