@@ -47,13 +47,24 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    \textbf{#1 \vspace{-3pt}}
+    \textbf{#1 \vspace{-5pt}}
   }
 }
 
 % Per-position tech stack line: \resumeSkills{Label}{comma-separated list}
 \newcommand{\resumeSkills}[2]{
   \item[]\small{\textbf{#1: }#2}\vspace{-4pt}
+}
+
+% Subheading with a one-line company description as a third row
+% \resumeSubheadingDesc{Company}{Location}{Title}{Dates}{Description}
+\newcommand{\resumeSubheadingDesc}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \multicolumn{2}{@{}l}{\footnotesize\textit{#5}} \\
+    \end{tabular*}\vspace{-6pt}
 }
 
 % Just in case someone needs a heading that does not need to be in a list
