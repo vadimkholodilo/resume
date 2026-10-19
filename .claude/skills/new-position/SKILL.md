@@ -5,7 +5,9 @@ description: Use when adding a new job/position entry to resume-en.tex, or editi
 
 # Adding a position to the resume
 
-**This resume has two language versions that must stay in sync: [resume-en.tex](../../../resume-en.tex) (English) and [resume-ru.tex](../../../resume-ru.tex) (Russian).** Every step below applies to both files — write/edit the English bullets first, then translate them into natural, resume-appropriate Russian (not a literal word-for-word translation; keep the same house style described in step 2, adapted to Russian phrasing). Shared packages/macros live in [resume-common.tex](../../../resume-common.tex) — don't duplicate them into either language file.
+**Which resume?** The repo has one folder per resume (`dotnet/`, `python/`), each with its own `resume-en.tex` and `resume-ru.tex`. Ask the user which resume the position belongs to if unclear, and edit only that folder's files (paths below are relative to it; links point at `dotnet/` as the example). In `python/`, the Experience list wrapper is commented out while empty -- uncomment it when adding the first position.
+
+**Each resume has two language versions that must stay in sync: [resume-en.tex](../../../dotnet/resume-en.tex) (English) and [resume-ru.tex](../../../dotnet/resume-ru.tex) (Russian).** Every step below applies to both files — write/edit the English bullets first, then translate them into natural, resume-appropriate Russian (not a literal word-for-word translation; keep the same house style described in step 2, adapted to Russian phrasing). Shared packages/macros live in [resume-common.tex](../../../resume-common.tex) — don't duplicate them into either language file.
 
 ## 1. Gather the facts
 
@@ -15,7 +17,7 @@ If the user has a careers-page/job-posting URL and wants help remembering what t
 
 ## 2. Write bullets in the house style
 
-Study the existing `\resumeItem` bullets in [resume-en.tex](../../../resume-en.tex) before writing new ones. Match:
+Study the existing `\resumeItem` bullets in [resume-en.tex](../../../dotnet/resume-en.tex) before writing new ones. Match:
 
 - **Past tense, action-verb-first** ("Enhanced", "Optimized", "Streamlined", "Implemented", "Collaborated").
 - **Quantified impact** where possible — a %, a dollar amount, a time saved (e.g. "achieving 20\% speed increase", "reducing deployment time by 50\%"). Don't invent numbers; ask the user for a real figure or write the bullet without one.

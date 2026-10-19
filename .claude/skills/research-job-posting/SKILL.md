@@ -5,7 +5,7 @@ description: Use at the start of adding a new position, when the user gives a co
 
 # Researching a job posting to draft resume bullets
 
-Purpose: memory aid, not fabrication. You will produce *draft, unverified* bullet candidates derived from what a job posting says the role expects. The user must confirm each one is actually true of their own experience before it goes anywhere near [resume-en.tex](../../../resume-en.tex). Never present a drafted bullet as a fact about the user's history.
+Purpose: memory aid, not fabrication. You will produce *draft, unverified* bullet candidates derived from what a job posting says the role expects. The user must confirm each one is actually true of their own experience before it goes anywhere near [resume-en.tex](../../../dotnet/resume-en.tex). Never present a drafted bullet as a fact about the user's history.
 
 ## 1. Get the inputs
 

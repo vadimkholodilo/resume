@@ -25,3 +25,5 @@ Archieve/
 # Generated ATS analysis reports and their filtered input (regenerate via `make report`)
 *-ats-report.md
 *.ats.tex
+# Release assets collected by `make dist`
+dist/

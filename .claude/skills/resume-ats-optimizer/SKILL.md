@@ -318,8 +318,8 @@ After optimization, the resume should:
 
 ## Notes for this repo
 
-This project's resume is `resume-en.tex`, a LaTeX document — not a Word/PDF template. When scoring or optimizing:
-- Read `resume-en.tex` directly rather than asking for a file upload.
+This project has one folder per resume (`dotnet/`, `python/`); the resume to score is that folder's `resume-en.tex` (ask which if unclear; `make report` runs all). Each is a LaTeX document — not a Word/PDF template. When scoring or optimizing:
+- Read the folder's `resume-en.tex` directly rather than asking for a file upload.
 - **Ignore everything inside `\begin{comment}...\end{comment}` blocks** (currently old positions and the Projects section). That content is not compiled into the PDF, so it's invisible to any real ATS or recruiter — don't spend time analyzing it, don't score it, and don't suggest edits to it.
 - LaTeX output already tends to be single-column, standard-fonted, and text-based (ATS-friendly by construction) — focus the review on keyword match and section-header wording rather than re-litigating file format basics.
 - If suggesting bullet or skills changes, follow this repo's existing macros (`\resumeItem`, etc.) per [CLAUDE.md](../../CLAUDE.md) rather than proposing a new template.
